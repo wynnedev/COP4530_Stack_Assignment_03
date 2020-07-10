@@ -235,7 +235,7 @@ int List<T>::size() const
 template <typename T>
 bool List<T>::empty() const
 {
-    if(theSize > 0)
+    if(theSize <= 0)
     {
         return true;
     }
